@@ -71,7 +71,7 @@ class Calculator:
             self.equation.delete(-1, END)
             self.equation.insert(0, answer)
         elif value == "<-":   
-             self.equation.delete(-1)
+             self.equation.delete(len(current_equation)-1)
         elif value == "√x":
             self.equation.delete(-1, END)
             self.equation.insert(-1, current_equation + '**0.5')
